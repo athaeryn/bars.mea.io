@@ -1,0 +1,52 @@
+/* CSS */
+html, body {
+  height: 100%;
+  background: #111;
+  margin: 0;
+}
+
+* { box-sizing: border-box; }
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 300px;
+  margin-left: -300px;
+  margin-top: -150px;
+  border: 1px solid #333;
+  border-left: 0;
+  border-right: 0;
+}
+
+.container:before {
+  content: attr(data-max);
+  top: -6px;
+}
+.container:after {
+  content: attr(data-min);
+  bottom: -6px;
+}
+.container:before,
+.container:after {
+  color: #eee;
+  font-family: ProggyClean, monospace;
+  font-weight: 300;
+  position: absolute;
+  right: 101%;
+  font-size: 11px;
+  opacity: 0.35;
+}
+
+.container b {
+  background-color: #488387;
+  background-image: linear-gradient(0deg, #488387, #465155);
+  position: absolute;
+  bottom: 0;
+  opacity: 0.6;
+  transition: all .2s ease;
+  border-left: 1px solid rgba(0,0,0,0.2);
+}
+
+.container b:hover { opacity: 1; }
