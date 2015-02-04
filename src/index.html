@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>bars</title>
+    <link rel="stylesheet" href="css/bars.css">
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+    <div id="container"></div>
+    <script src="js/bars.js"></script>
+    <script>
+      void function(w) {
+        "use strict";
+        var el = w.document.getElementById("container");
+        w.BARS.mount(el);
+      }(window);
+    </script>
+  </body>
+</html>

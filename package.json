@@ -1,0 +1,33 @@
+{
+  "name": "bars",
+  "version": "1.0.0",
+  "description": "Graphs data (probably from tubesock)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/athaeryn/bars.mea.io.git"
+  },
+  "author": "Mike Anderson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/athaeryn/bars.mea.io/issues"
+  },
+  "homepage": "https://github.com/athaeryn/bars.mea.io",
+  "dependencies": {
+    "6to5": "^3.3.9",
+    "6to5ify": "^4.1.0",
+    "browserify": "^8.1.3",
+    "gulp": "^3.8.10",
+    "gulp-util": "^3.0.3",
+    "react": "^0.12.2",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "browserify": {
+    "transforms": [
+      "6to5ify"
+    ]
+  }
+}
