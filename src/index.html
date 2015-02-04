@@ -1,19 +1,17 @@
 <!doctype html>
-<html>
+<html id="bars-app">
   <head>
     <title>bars</title>
     <link rel="stylesheet" href="css/bars.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <div id="favicon">
+      <link rel="shortcut icon" href="favicon.ico">
+    </div>
   </head>
   <body>
     <div id="container"></div>
     <script src="js/bars.js"></script>
     <script>
-      void function(w) {
-        "use strict";
-        var el = w.document.getElementById("container");
-        w.BARS.mount(el);
-      }(window);
+      window.BARS.mount(document.getElementById("container"));
     </script>
   </body>
 </html>

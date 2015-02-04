@@ -4,21 +4,8 @@ import Bar from "./bar";
 export default React.createClass({
   displayName: "Graph",
 
-  propTypes: {
-    min: React.PropTypes.number,
-    max: React.PropTypes.number,
-    size: React.PropTypes.number.isRequired,
-    data: React.PropTypes.arrayOf(React.PropTypes.number).isRequired,
-  },
-
-  getInitialState() {
-    return {
-      data: this.props.data || new Array(this.props.size).fill(0)
-    };
-  },
-
   render() {
-    var bars = this.state.data.map(function(val, i) {
+    var bars = this.props.data.map(function(val, i) {
       return (
         <Bar
           key={i}

@@ -23,7 +23,7 @@ export default React.createClass({
       0,
       Math.min(
         100,
-          (value - this.props.min)
+        (value - this.props.min)
         / (this.props.max - this.props.min)
         * 100
       )
